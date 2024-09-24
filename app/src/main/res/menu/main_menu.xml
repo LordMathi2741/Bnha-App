@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/bottomHome"
+      android:title="@string/home_button_title"
+      android:icon="@drawable/baseline_home_24"/>
+  <item
+      android:id="@+id/bottomCharacters"
+      android:title="@string/characters_section_title"
+      android:icon="@drawable/bnha_icon"/>
+  <item
+      android:id="@+id/bottomFavorite"
+      android:title="@string/favorite_button_title"
+      android:icon="@drawable/baseline_favorite_24"/>
+
+</menu>

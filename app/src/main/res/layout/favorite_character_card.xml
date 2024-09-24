@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvFavoriteCharacter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="20dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEBC9">
+
+        <ImageView
+            android:id="@+id/ivFavoriteCharacter"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvFavoriteCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="156dp"
+            android:textColor="#880303"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFavoriteCharacter"
+            tools:text="Aqui va el nombre" />
+
+        <TextView
+            android:id="@+id/tvJFavoriteJapaneseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="156dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteCharacter"
+            tools:text="Aqui va el name Japanese" />
+
+        <TextView
+            android:id="@+id/tvFavoriteOtherNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJFavoriteJapaneseName"
+            tools:text="Aqui va el other names" />
+
+        <TextView
+            android:id="@+id/tvFavoriteQuirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteOtherNames"
+            tools:text="Aqui va el quirk" />
+
+        <TextView
+            android:id="@+id/tvFavoriteQuirkJapanese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteQuirk"
+            tools:text="Aqui va el quirk japanese" />
+
+        <TextView
+            android:id="@+id/tvFavoriteQuirkDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteQuirkJapanese"
+            tools:text="Aqui va el quirk description" />
+
+        <TextView
+            android:id="@+id/tvFavoriteHeroSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteQuirkDescription"
+            tools:text="Aqui va el hero school" />
+
+        <TextView
+            android:id="@+id/tvFavoriteHeroClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteHeroSchool"
+            tools:text="Aqui va el hero class" />
+
+        <ImageButton
+            android:id="@+id/ibtnDelete"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="161dp"
+            android:background="@drawable/rounded_button"
+            android:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteHeroClass"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

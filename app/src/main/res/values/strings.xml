@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">bnha</string>
+    <string name="item_home_title">Home</string>
+    <string name="toolbar_title">Bnha App</string>
+    <string name="welcome_message">Welcome to Bnha App!!</string>
+    <string name="home_button_title">Home</string>
+    <string name="favorite_button_title">Favorite</string>
+    <string name="characters_section_title">Characters</string>
+    <string name="licence">This app was developed for a suggestion from my close friend, it\'s still in development, please contact me for send your suggestion: https://github.com/LordMathi2741.</string>
+    <string name="licence_title">License and App Information</string>
+    <string name="copyright">Copyright © 2024 LordMathi2741. All rights reserved.</string>
+</resources>

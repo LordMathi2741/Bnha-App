@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvCredits"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    app:cardElevation="20dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".presentation.ui.CreditsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1E798">
+
+        <TextView
+            android:id="@+id/tvCreditTitle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/licence_title"
+            android:textColor="#B10404"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="0dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="@string/licence"
+            android:textAlignment="center"
+            android:textColor="#770202"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreditTitle"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="@string/copyright"
+            android:textColor="#840404"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAuthor" />
+
+        <ImageButton
+            android:id="@+id/ibtnHome"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCopyright"
+            app:srcCompat="@drawable/baseline_home_24"
+            app:tint="@color/white"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
